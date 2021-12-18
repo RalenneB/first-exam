@@ -17,10 +17,10 @@ body {
 
   .header-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    // align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
     height: 100vh;
 
     // image settup
@@ -35,7 +35,6 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 15rem;
 
       &--title {
         text-transform: uppercase;
@@ -140,8 +139,6 @@ body {
       background-color: #5474fd;
       width: 100%;
       padding: 1.5rem;
-      align-self: center;
-      vertical-align: middle;
 
       &--logo {
         display: flex;
@@ -517,9 +514,15 @@ body {
 //tablet screens
 
 @media screen and (max-width: 768px) {
-  .header-container__search {
-    max-width: 30rem;
-  }
+
+    .header-container{
+        padding-top: 20%;
+
+        &__search {
+            max-width: 30rem;
+          }
+    }
+  
   .screen-container {
     .header-container__nav {
       flex-direction: column;
@@ -611,6 +614,7 @@ body {
     .header-container {
         background-image: url(/assets/img/mobile1.PNG);
         height: auto;
+        padding-top: 25%;
 
         &__search {
             max-width: 22rem;
