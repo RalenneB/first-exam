@@ -222,6 +222,7 @@ body {
 }
 .screen-container .icons-container__shape {
   z-index: 2;
+  background-image: url("/assets/");
 }
 .screen-container a {
   text-decoration: none;
