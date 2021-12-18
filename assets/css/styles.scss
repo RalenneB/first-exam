@@ -514,15 +514,14 @@ body {
 //tablet screens
 
 @media screen and (max-width: 768px) {
+  .header-container {
+    padding-top: 20%;
 
-    .header-container{
-        padding-top: 20%;
-
-        &__search {
-            max-width: 30rem;
-          }
+    &__search {
+      max-width: 30rem;
     }
-  
+  }
+
   .screen-container {
     .header-container__nav {
       flex-direction: column;
@@ -548,7 +547,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         &--title {
           text-align: center;
           justify-content: center;
@@ -566,20 +565,20 @@ body {
       }
     }
 
-    .locations-container__house{
-        justify-content: center;
+    .locations-container__house {
+      justify-content: center;
 
-        .locations__card{
-            margin: 0;
-        }
+      .locations__card {
+        margin: 0;
+      }
     }
 
-    .locations-container__beach{
-        justify-content: center;
+    .locations-container__beach {
+      justify-content: center;
 
-        .locations__card{
-            margin: 0;
-        }
+      .locations__card {
+        margin: 0;
+      }
     }
 
     .tourist-container {
@@ -602,29 +601,26 @@ body {
 //mobile phone screens
 
 @media screen and (max-width: 664px) {
-
   a {
     display: flex;
     justify-content: center;
   }
 
   .screen-container {
-
-
     .header-container {
-        background-image: url(/assets/img/mobile1.PNG);
-        height: auto;
-        padding-top: 25%;
+      background-image: url(/assets/img/mobile1.PNG);
+      height: auto;
+      padding-top: 25%;
 
-        &__search {
-            max-width: 22rem;
+      &__search {
+        max-width: 22rem;
 
-            .hidden-elem {
-                display: none;
-            }
-          }
+        .hidden-elem {
+          display: none;
+        }
+      }
     }
-    
+
     .choose-container {
       flex-direction: column;
 
@@ -640,39 +636,37 @@ body {
       }
 
       &__img {
-          display: none;
+        display: none;
       }
     }
 
-
     .locations-container__house {
-        background-image: url(/assets/img/mobile2.PNG);
+      background-image: url(/assets/img/mobile2.PNG);
     }
 
     .locations-container__beach {
-        background-image: url(/assets/img/mobile3.PNG);
+      background-image: url(/assets/img/mobile3.PNG);
     }
-    .icons-container{
-        flex-direction: column;
+    .icons-container {
+      flex-direction: column;
 
-        &__elem--title {
-            font-size: 22px;
-            padding-bottom: 1rem;
-        }
+      &__elem--title {
+        font-size: 22px;
+        padding-bottom: 1rem;
+      }
 
-        &__elem .fa {
-            font-size: 35px;
-            margin: 0;
-        }
+      &__elem .fa {
+        font-size: 35px;
+        margin: 0;
+      }
     }
 
     .tourist-container {
-        height: auto;
+      height: auto;
 
-        &__testimonial {
-            width: 100%;
-        }
+      &__testimonial {
+        width: 100%;
+      }
     }
-    
   }
 }
